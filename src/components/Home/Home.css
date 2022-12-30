@@ -1,0 +1,87 @@
+.portHome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.portHome span:first-child {
+  color: var(--textGre);
+}
+
+.portHome h2 {
+  color: var(--textWhi);
+  font-size: 4rem;
+}
+
+.portHome .portTrab {
+  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--textCre);
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+  font-family: monospace;
+  animation: typing 4s steps(22), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.portHome > p {
+  max-width: 70%;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.portHome .icons {
+  display: flex;
+  gap: 24px;
+}
+
+.portHome .icons a {
+  color: var(--textWhi);
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.portHome .icons a:hover {
+  transform: translateY(-5px);
+  color: var(--textGre);
+}
+
+@media screen and (max-width: 600px) {
+  .portHome h2 {
+    font-size: 3rem;
+  }
+
+  .portHome .portTrab {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1023) {
+  .portHome h2 {
+    font-size: 3rem;
+  }
+
+  .portHome .portTrab {
+    font-size: 2rem;
+  }
+}

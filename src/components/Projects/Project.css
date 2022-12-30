@@ -1,0 +1,152 @@
+.portProjects {
+  width: 100%;
+  height: 100vh;
+}
+
+.portProjects .container {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 10px;
+  padding-top: 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-3 photo-3 photo-3'
+    'photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-3 photo-3 photo-3'
+    'photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-3 photo-3 photo-3'
+    'photo-1 photo-1 photo-1 photo-1 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5'
+    'photo-1 photo-1 photo-1 photo-1 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5'
+    'photo-7 photo-7 photo-7 photo-7 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5'
+    'photo-7 photo-7 photo-7 photo-7 photo-4 photo-4 photo-4 photo-4 photo-5 photo-5'
+    'photo-7 photo-7 photo-7 photo-7 photo-9 photo-9 photo-8 photo-8 photo-5 photo-5'
+    'photo-7 photo-7 photo-7 photo-7 photo-9 photo-9 photo-8 photo-8 photo-6 photo-6'
+    'photo-7 photo-7 photo-7 photo-7 photo-9 photo-9 photo-8 photo-8 photo-6 photo-6'
+    'photo-7 photo-7 photo-7 photo-7 photo-9 photo-9 photo-8 photo-8 photo-6 photo-6';
+}
+
+.portProjects .tile {
+  background-position: center;
+  background-size: cover;
+}
+
+.portProjects .tile .back {
+  background-color: transparent;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  color: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+.portProjects .tile .back a {
+  color: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+.portProjects .tile .back:hover a {
+  color: var(--textWhi);
+}
+
+.portProjects .tile .back:hover {
+  background-color: #01234577;
+  backdrop-filter: blur(5px);
+  color: var(--textWhi);
+}
+
+.back > div {
+  display: flex;
+  gap: 8px;
+  font-size: 1.5rem;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.back div i {
+  cursor: pointer;
+}
+
+.backgroundOption {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portProjects .photo-1 {
+  grid-area: photo-1;
+  background-image: url(../../assets/Instagram.jpg);
+}
+
+.portProjects .photo-2 {
+  background-image: url(../../assets/gifs.jpg);
+
+  grid-area: photo-2;
+}
+
+.portProjects .photo-3 {
+  background-image: url(../../assets/Pomodoro.jpg);
+
+  grid-area: photo-3;
+}
+
+.portProjects .photo-4 {
+  grid-area: photo-4;
+  background-image: url(../../assets/Spotify.jpg);
+}
+
+.portProjects .photo-5 {
+  background-image: url(../../assets/Pomodoro.jpg);
+
+  grid-area: photo-5;
+}
+
+/*pomodoro*/
+.portProjects .photo-6 {
+  background-image: url(../../assets/Pomodoro.jpg);
+
+  grid-area: photo-6;
+}
+
+.portProjects .photo-7 {
+  background-image: url(../../assets/Traductor.jpg);
+  grid-area: photo-7;
+}
+
+/*cuestionario*/
+.portProjects .photo-8 {
+  background-image: url(../../assets/Cuestionario.jpg);
+
+  grid-area: photo-8;
+}
+
+.portProjects .photo-9 {
+  background-image: url(../../assets/Tareas.jpg);
+
+  grid-area: photo-9;
+}
+
+@media screen and (max-width: 767px) {
+  .portProjects .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-2"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-2"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-2"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-3 photo-3 photo-3 photo-3 photo-3"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-3 photo-3 photo-3 photo-3 photo-3"
+    "photo-1 photo-1 photo-1 photo-1 photo-1 photo-3 photo-3 photo-3 photo-3 photo-3"
+    "photo-5 photo-5 photo-5 photo-5 photo-5 photo-4 photo-4 photo-4 photo-4 photo-4"
+    "photo-5 photo-5 photo-5 photo-5 photo-5 photo-4 photo-4 photo-4 photo-4 photo-4"
+    "photo-5 photo-5 photo-5 photo-5 photo-5 photo-4 photo-4 photo-4 photo-4 photo-4"
+    "photo-7 photo-7 photo-7 photo-7 photo-7 photo-6 photo-6 photo-6 photo-6 photo-6"
+    "photo-7 photo-7 photo-7 photo-7 photo-7 photo-6 photo-6 photo-6 photo-6 photo-6"
+    "photo-7 photo-7 photo-7 photo-7 photo-7 photo-6 photo-6 photo-6 photo-6 photo-6"
+    "photo-9 photo-9 photo-9 photo-9 photo-9 photo-8 photo-8 photo-8 photo-8 photo-8"
+    "photo-9 photo-9 photo-9 photo-9 photo-9 photo-8 photo-8 photo-8 photo-8 photo-8"
+    "photo-9 photo-9 photo-9 photo-9 photo-9 photo-8 photo-8 photo-8 photo-8 photo-8"; 
+}
+}

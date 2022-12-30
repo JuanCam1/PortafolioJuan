@@ -1,0 +1,54 @@
+.portHeader {
+  width: var(--widthHeader);
+  min-width: 64px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 0.5px solid #ebebeb;
+  position: fixed;
+  z-index: 3;  
+  backdrop-filter: blur(10px);
+}
+
+.portHeader ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portHeader ul li {
+  text-align: center;
+}
+
+.portHeader li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portHeader li a:hover:not(.active) {
+  transform: translateY(-5px);
+  color: var(--textGre);
+}
+
+@media screen and (max-width: 767px) {
+  .portHeader {
+    width: 100%;
+    height: var(--widthHeader);
+    border-bottom: 0.5px solid #ebebeb;
+  }
+
+  .portHeader ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+}
